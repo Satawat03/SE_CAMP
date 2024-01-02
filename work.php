@@ -5,8 +5,16 @@
 </head>
 
 <body>
-    <?php $multi_x = 2; ?>
+    <?php $multi_x = isset($_POST['num_x']) ? $_POST['num_x'] : 2; ?>
+
+    
     <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+
+    <form method="post">
+        <label for="num_x">กรอกแม่สูตรคูณ:</label>
+        <input type="number" name="num_x" id="num_x" value="<?php echo $multi_x ?>" required>
+        <button type="submit">ยืนยัน</button>
+    </form>
 
     <table>
         <tbody>
