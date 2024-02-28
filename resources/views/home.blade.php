@@ -120,7 +120,6 @@
             </div>
 
         </form>
-        <div>ควย</div>
     </div>
     <div>asdasdasdasd</div>
 @endsection
